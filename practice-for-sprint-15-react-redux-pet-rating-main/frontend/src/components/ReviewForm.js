@@ -17,7 +17,7 @@ const ReviewForm = ({ review, formType, onSubmit, closeForm }) => {
   };
 
   const onChange = (e) => {
-    const number = e.target.value;
+    const number = e.target.value || e.currentTarget.dataset.index;
     setRating(parseInt(number));
   };
 
